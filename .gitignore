@@ -12,6 +12,7 @@ config.ini
 # Distribution / packaging
 .Python
 env/
+myvenv/
 build/
 develop-eggs/
 dist/
@@ -91,3 +92,6 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+#Output Reports
+Reports/
