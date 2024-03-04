@@ -12,9 +12,6 @@ def make_network():
     print(nodes.head())
     print(links.head())
 
-    links = links[links['FromSystemID'] != 331]
-    nodes = nodes[nodes['SystemID'] != 331]
-
     # Create edges list for network graph
     edges = []
     x = 1
