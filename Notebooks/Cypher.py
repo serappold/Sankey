@@ -20,6 +20,8 @@ def generate_cypher_queries():
     for index, row in nodes_df.iterrows():
         cypher_queries.append(f"CREATE (:System {{SystemID: {row['SystemID']}, Name: '{row['Systems']}'}})")
 
+    #nothing important here
+
     # Generate Cypher queries for creating relationships
     for index, row in links_df.iterrows():
         cypher_queries.append(f"MATCH (from:System {{SystemID: {row['FromSystemID']}}}), "
